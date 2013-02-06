@@ -1,1 +1,5 @@
-DirectoryIndex index.php
+RewriteEngine on
+
+
+RewriteCond $1 !^(index\.php|assets|media|robots\.txt)
+RewriteRule ^(.*)$ /blog/index.php/$1 [L]
