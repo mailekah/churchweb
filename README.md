@@ -6,7 +6,10 @@ Packaged online apps for churches including: a website, a church directory, a wo
 TODO:
 ----
 
-
+* Move Worship planner into CodeIgniter app
+* Figure out database schema
+* Find/make some themes (figure out how to do theming, if it's just css, or view replacement)
+* 
 
 Notes:
 ----
@@ -22,3 +25,5 @@ Disadvantages of this include:
 * Going to have to watch the security pretty closely
 * Make sure that the user experience matches that of WordPress... will take *time*
 * Will likely take more time to develop overall (essentially a customizable CMS)
+
+Open-sourcing this makes sense, because it's a convenience solution. No secret algorithms or proprietary content. If someone wants to pull the code and do setup themselves, go for it.
