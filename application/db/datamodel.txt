@@ -1,0 +1,4 @@
+User
+-username
+-password (hashed)
+-salt
