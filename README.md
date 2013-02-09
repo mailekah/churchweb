@@ -9,7 +9,6 @@ TODO:
 * Move Worship planner into CodeIgniter app
 * Figure out database schema
 * Find/make some themes (figure out how to do theming, if it's just css, or view replacement)
-* 
 
 Notes:
 ----
@@ -27,3 +26,14 @@ Disadvantages of this include:
 * Will likely take more time to develop overall (essentially a customizable CMS)
 
 Open-sourcing this makes sense, because it's a convenience solution. No secret algorithms or proprietary content. If someone wants to pull the code and do setup themselves, go for it.
+
+Features
+----
+
+* Mainly static content. People are familiar with pages. Joomla made those a hassle. Don't do that.
+* User-definable "publishing" pages. Things like newsletter, sermons, pastor's blog, etc. Things you'd submit content to.
+* Clean URLs
+* Access control for viewing parts of the site.
+* Access control for editing parts of the site. Try and get good granularity.
+* Embedded calendar! (Google calendar plugin)
+* Media management... picture upload area? Dunno about a video player...
