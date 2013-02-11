@@ -16,6 +16,7 @@ contacts
 -notes
 
 contact_roles
+-*id
 ~contact_id
 ~role_id
 
@@ -42,6 +43,21 @@ plan_files
 ~plan_id
 ~file_id
 -order
+
+plan_members
+-*id
+~plan_id
+~contact_id
+-order
+-position
+
+guest_members
+-*id
+~plan_id
+-order
+-name
+-email
+-position
 
 
 
