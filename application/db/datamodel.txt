@@ -1,3 +1,18 @@
+#########
+#Website#
+#########
+
+publishing_pages
+-*id
+-title
+-description
+
+
+
+##################
+#People, Security#
+##################
+
 users
 -*id
 -username
@@ -25,9 +40,9 @@ roles
 -name
 -description
 
-
-Worship Planner
-----
+#################
+#Worship Planner#
+#################
 
 plans
 -*id
@@ -59,10 +74,22 @@ guest_members
 -email
 -position
 
+songs
+-*id
+-name
+-author
+-link
+-flow
 
+plan_songs
+~song_id
+~plan_id
+-type
+-order
 
-Media
-----
+#######
+#Media#
+#######
 
 files
 -*id
@@ -73,4 +100,4 @@ files
 
 
 
-Consider: RDF data.
+#Consider: RDF data.

@@ -39,3 +39,5 @@ Features
 * Access control for *editing* parts of the site. Try and get good granularity.
 * Embedded calendar! (Google calendar plugin)
 * Media management... picture upload area? Dunno about a video player...
+* Something we can quickly set up, and then the administration interface for regular admins is VERY SIMPLE
+* I like the idea of templates and swappable modules, for quick setup.
