@@ -7,6 +7,11 @@ publishing_pages
 -title
 -description
 
+post
+-*id
+-author
+-content
+~publishing_page
 
 
 ##################
