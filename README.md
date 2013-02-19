@@ -9,8 +9,9 @@ TODO:
 * Move Worship planner into CodeIgniter app
 * Figure out database schema
 * Find/make some themes (figure out how to do theming, if it's just css, or view replacement)
-* Look into using BootStrap (at least LessCSS or SaSS)
-* check out Joomla and Drupal closely... maybe Wordpress some more...
+* Look into using BootStrap
+* Licensing concerns (which OS license?)
+* Look into TinyMCE
 
 Notes:
 ----
@@ -32,10 +33,22 @@ Open-sourcing this makes sense, because it's a convenience solution. No secret a
 Features
 ----
 
+* Choose a site theme (from a couple of different ones) - maybe learn how to use WP themes?
 * Mainly static content. People are familiar with pages. Joomla made those a hassle. Don't do that.
 * User-definable "publishing" pages. Things like newsletter, sermons, pastor's blog, etc. Things you'd submit content to.
 * Clean URLs
 * Access control for viewing parts of the site.
 * Access control for *editing* parts of the site. Try and get good granularity.
 * Embedded calendar! (Google calendar plugin)
-* Media management... picture upload area? Dunno about a video player...
+* Media management. Pictures are a must. Video/sound would be nice? 
+* Mass-contact/user update tool (CSV)
+* Preferably TinyMCE as the page editor
+* Easily accessable site search feature
+
+
+Non-Code Features
+----
+
+* email addresses (?) and domain
+* shared hosting of some sort (probably don't need Amazon Web Services or a dedicated cloud server, but we'll see...)
+* 
