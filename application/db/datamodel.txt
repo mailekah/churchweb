@@ -1,3 +1,53 @@
+#########
+#Website#
+#########
+
+menu
+-*id
+-name
+
+menu_links
+-*id
+~menu_id
+-text
+-type
+-url
+~page_id
+-order
+
+pages
+-*id
+-title
+-description
+-type
+
+posts
+-*id
+-date
+-author
+-content
+-order
+~page_id
+
+posts_tags
+~post_id
+~tag_id
+
+tags
+-*id
+-name
+
+comments
+-
+-
+-author
+-approved
+
+
+##################
+#People, Security#
+##################
+
 users
 -*id
 -username
@@ -15,9 +65,9 @@ contacts
 -position
 -notes
 
-contact_roles
+user_roles
 -*id
-~contact_id
+~user_id
 ~role_id
 
 roles
@@ -25,9 +75,9 @@ roles
 -name
 -description
 
-
-Worship Planner
-----
+#################
+#Worship Planner#
+#################
 
 plans
 -*id
@@ -59,10 +109,22 @@ guest_members
 -email
 -position
 
+songs
+-*id
+-name
+-author
+-link
+-flow
 
+plan_songs
+~song_id
+~plan_id
+-type
+-order
 
-Media
-----
+#######
+#Media#
+#######
 
 files
 -*id
@@ -71,3 +133,6 @@ files
 -path
 -type
 
+
+
+#Consider: RDF data.
