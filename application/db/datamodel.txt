@@ -2,16 +2,46 @@
 #Website#
 #########
 
-publishing_pages
+menu
+-*id
+-name
+
+menu_links
+-*id
+~menu_id
+-text
+-type
+-url
+~page_id
+-order
+
+pages
 -*id
 -title
 -description
+-type
 
-post
+posts
 -*id
+-date
 -author
 -content
-~publishing_page
+-order
+~page_id
+
+posts_tags
+~post_id
+~tag_id
+
+tags
+-*id
+-name
+
+comments
+-
+-
+-author
+-approved
 
 
 ##################
@@ -35,9 +65,9 @@ contacts
 -position
 -notes
 
-contact_roles
+user_roles
 -*id
-~contact_id
+~user_id
 ~role_id
 
 roles
