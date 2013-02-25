@@ -5,10 +5,10 @@
 */
 
 // Load php.activerecord
-require_once APPPATH.'/libraries/php-activerecord/ActiveRecord.php';
+require_once APPPATH.'libraries/php-activerecord/ActiveRecord.php';
 
 // Load CodeIgniter's Model class 
-require_once BASEPATH.'/libraries/Model.php';
+require_once BASEPATH.'core/Model.php';
 
 class Activerecord {
     
@@ -25,13 +25,15 @@ class Activerecord {
             		':'     . $db[$name]['password'] .
             		'@'     . $db[$name]['hostname'] .
             		'/'     . $db[$name]['database'];
-            }
+            	echo APPPATH;
+				
+			}
         } 
         
         // Initialize ActiveRecord
         ActiveRecord\Config::initialize(function($cfg) use ($dsn, $active_group){
             $cfg->set_model_directory(APPPATH.'/models');
-            $cfg->set_connections($dsn);
+            $cfg->set_connections(array($active_group => 'sqlite://database.sqlite'));
             $cfg->set_default_connection($active_group);
         });
         

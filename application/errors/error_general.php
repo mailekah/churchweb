@@ -1,7 +1,7 @@
 <?php
 $r_no = 500;
-include 'error.php';
-exit;
+//include 'error.php';
+//exit;
 ?>
 
 <!DOCTYPE html>

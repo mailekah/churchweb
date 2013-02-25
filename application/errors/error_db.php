@@ -1,7 +1,8 @@
 <?php
 $r_no = 500;
-include 'error.php';
-exit;
+//TODO production
+//include 'error.php';
+//exit;
 ?>
 <!DOCTYPE html>
 <html lang="en">

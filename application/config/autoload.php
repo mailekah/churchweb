@@ -111,6 +111,11 @@ $autoload['language'] = array();
 
 $autoload['model'] = array();
 
+function __autoload($class) {  
+    if (file_exists(APPPATH."models/".strtolower($class).EXT)) {  
+        include_once(APPPATH."models/".strtolower($class).EXT);  
+    }
+}
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
