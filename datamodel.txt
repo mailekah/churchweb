@@ -38,8 +38,6 @@ tags
 -name
 
 comments
--
--
 -author
 -approved
 

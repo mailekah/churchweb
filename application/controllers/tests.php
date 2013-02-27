@@ -10,8 +10,17 @@ class Tests extends CI_Controller {
 
 	public function runtests() {
 
-		$test = Testing_Table::create(array('created_date' => date(DATE_W3C), 'text' => 'This is a test'));
-
+		$test1 = Testing_Table::create(array('created_date' => date(DATE_W3C), 'text' => 'This is a test'));
+		
+		$test2 = Testing_Table::find($test1->id);
+		
+		$this->unit->run($test1->id,$test2->id,'check db connectivity');
+		
+		foreach (Testing_Table::all() as $test){
+			$test->delete();
+		}
+		$this->unit->run(Testing_Table::all(),array(),'emptied table');
+		
 		echo $this -> unit -> report();
 
 	}

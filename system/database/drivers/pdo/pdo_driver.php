@@ -94,7 +94,6 @@ class CI_DB_pdo_driver extends CI_DB {
 	function db_connect()
 	{
 		$this->options['PDO::ATTR_ERRMODE'] = PDO::ERRMODE_SILENT;
-
 		return new PDO($this->hostname, $this->username, $this->password, $this->options);
 	}
 
@@ -190,6 +189,7 @@ class CI_DB_pdo_driver extends CI_DB {
 	{
 		$sql = $this->_prep_query($sql);
 		$result_id = $this->conn_id->prepare($sql);
+		
 		$result_id->execute();
 		
 		if (is_object($result_id))

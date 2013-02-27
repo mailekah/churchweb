@@ -42,6 +42,7 @@ $route['default_controller'] = 'pages/view';
 
 
 $route['tests'] = 'tests/runtests';
+$route['schema'] = 'schemabuild/build';
 
 
 $route['(:any)'] = 'pages/view/$1';

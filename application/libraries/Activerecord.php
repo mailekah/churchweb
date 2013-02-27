@@ -25,12 +25,12 @@ class Activerecord {
             		':'     . $db[$name]['password'] .
             		'@'     . $db[$name]['hostname'] .
             		'/'     . $db[$name]['database'];
-            	echo APPPATH;
 				
 			}
         } 
         
         // Initialize ActiveRecord
+        
         ActiveRecord\Config::initialize(function($cfg) use ($dsn, $active_group){
             $cfg->set_model_directory(APPPATH.'/models');
             $cfg->set_connections(array($active_group => 'sqlite://database.sqlite'));
