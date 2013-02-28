@@ -38,9 +38,15 @@ tags
 -name
 
 comments
+-*id
+-created
 -author
 -approved
+-text
 
+comments_posts
+~post_id
+~comment_id
 
 ##################
 #People, Security#
