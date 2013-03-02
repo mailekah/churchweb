@@ -12,6 +12,7 @@ menu_links
 -text
 -type
 -url
+~parent_id
 ~page_id
 -order 
 
@@ -40,6 +41,7 @@ tags
 comments
 -*id
 -created
+-edited
 -author
 -approved
 -text
