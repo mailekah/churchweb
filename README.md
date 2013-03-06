@@ -44,7 +44,7 @@ Features
 * Mass-contact/user update tool (CSV)
 * Preferably TinyMCE as the page editor
 * Easily accessable site search feature
-
+* Integrate with Google Forms
 
 Non-Code Features
 ----
