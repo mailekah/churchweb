@@ -11,7 +11,7 @@ menu_links
 ~menu_id
 -text
 -type
--url
+-url 
 ~parent_id
 ~page_id
 -order 
