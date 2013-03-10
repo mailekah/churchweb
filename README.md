@@ -3,16 +3,6 @@ ChurchWeb
 
 Packaged online apps for churches including: a website, a church directory, a worship planner, and a content management system.
 
-TODO:
-----
-
-* Move Worship planner into CodeIgniter app
-* Figure out database schema
-* Find/make some themes (figure out how to do theming, if it's just css, or view replacement)
-* Look into using BootStrap
-* Licensing concerns (which OS license?)
-* Look into TinyMCE
-
 Notes:
 ----
 
@@ -51,4 +41,12 @@ Non-Code Features
 
 * email addresses (?) and domain
 * shared hosting of some sort (probably don't need Amazon Web Services or a dedicated cloud server, but we'll see...)
-* 
+
+TODO/Roadmap
+----
+
+* Licensing concerns (which OS license?)
+* basic template functionality
+* data model (with tests)
+* worship planner rebuild
+* Look into TinyMCE
